@@ -168,11 +168,16 @@ var user1 = {
 /*Above you're given a user object. Loop through the user object checking to make sure
 that each value is truthy. If it's not truthy, remove it from the object. */
 
-  //Code Here
+  for (var prop in user1){
+    if(!user1[prop]){
+      delete user1[prop];
+    }
+  }
 
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
-  //Code Here
+  user1.name = "DJ Payne"
+  user1.username = "dalebird88"
 
 
 
@@ -196,11 +201,13 @@ var user2 = {
 //Let's say I, the user, decided to change my name and email address to the following
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
-  //Code Here
+  user2.name = 'Tyler S. McGinnis';
+  user2.email = 'tyler.mcginnis@devmounta.in';
+
 
 //Now call the sayName method that's on the user object which will alert the users email
 
-  //Code Here
+  user2.sayName();
 
 
 
