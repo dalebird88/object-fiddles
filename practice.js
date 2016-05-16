@@ -109,11 +109,19 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 //Create an Object called 'album' with 5 keys named different song titles that you make up, with the values being the length of each song.
 
-  //Code Here
+  var album = {
+    JunkyardRabbit: "3 min 17 sec",
+    GiantDwarf: "4 min 2 sec",
+    NoMetal: "10 min 0 sec",
+    StopsignConfession: "3 min 37 sec",
+    DieHard: "5 min 4 sec"
+  };
 
 //Now, loop through your album object alerting every song title individually.
 
-  //Code Here
+  for (var prop in album){
+    alert(prop);
+  };
 
 
 
@@ -125,11 +133,21 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 //Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
 
-  //Code Here
+   var states = {
+     Utah: 1000000,
+     Montana: 50000,
+     Vermont: 50000,
+     Illinois: 20000000,
+     Kansas: 30000
+   };
 
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
-  //Code Here
+  for (var prop in states) {
+    if (states[prop] > 30000) {
+      alert(prop);
+    }
+  };
 
 
 
