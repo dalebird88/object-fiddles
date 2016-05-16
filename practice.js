@@ -219,7 +219,10 @@ var user2 = {
 
 //Create an empty object called methodCollection.
 
-  //Code Here
+  var methodCollection = {
+    alertHello: function () {alert("hello")},
+    logHello: function () {console.log("hello")}
+  };
 
 /*Now add two methods (functions that are properties on objects) to your methodCollection
 object. One called 'alertHello' which alerts 'hello' and another method called logHello
@@ -229,7 +232,8 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
 //Now call your alertHello and logHello methods.
 
-  //Code Here
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 
@@ -239,7 +243,14 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
 // Create a function called MakePerson which takes in name, birthday, ssn as its parameters and returns a new object with all of the information that you passed in.
 
-  //Code Here
+  function MakePerson(name1, birthday1, ssn1) {
+    var obj = {};
+    obj.name = name1;
+    obj.birthday = birthday1;
+    obj.ssn = ssn1;
+
+    return obj;
+  }
 
 
 
